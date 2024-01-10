@@ -16,9 +16,9 @@ class Cliente:
     
     @classmethod
     def listar_clientes(cls):
-        print(f"{'Nome do cliente'.ljust(25)} | {'Cidade'.ljust(25)} | {'Total comprado'.ljust(25)} | {'Status'}")
+        print( f"\n {'Nome do cliente'.ljust(25)} | {'Cidade'.ljust(25)} | {'Total comprado'.ljust(25)} | {'Status'}")
         for cliente in cls.clientes:
-            print(f'{cliente._nome.ljust(25)} | {cliente._cidade.ljust(25)} | {str(cliente.total_compra).ljust(25)} | {cliente.ativo}')
+            print(f'\n {cliente._nome.ljust(25)} | {cliente._cidade.ljust(25)} | {str(cliente.total_compra).ljust(25)} | {cliente.ativo}')
 
     @property
     def ativo(self):
